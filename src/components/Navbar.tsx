@@ -22,7 +22,7 @@ function navbar({ className }: { className?: string }) {
                     <MenuItem setActive={setActive} active={active} item="Profile">
                     </MenuItem>
                 </Link>
-                <Link href={"/xyz"}>
+                <Link href={"#"}>
                     <MenuItem setActive={setActive} active={active} item="Contact">
                     </MenuItem>
                 </Link>
