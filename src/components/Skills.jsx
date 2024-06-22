@@ -6,7 +6,7 @@ function Skills() {
     <>
       <div className="relative flex w-full items-center justify-center overflow-hidden rounded-lg h-screen bg-background md:shadow-xl">
         <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-          Circles
+          My skills
         </span>
 
         {/* Inner Circles */}
