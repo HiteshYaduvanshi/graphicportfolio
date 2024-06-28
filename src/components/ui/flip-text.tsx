@@ -62,7 +62,7 @@ export default function SlightFlip({
                             whileInView="onscreen"
                             variants={framerProps}
                             transition={{ duration, delay: i * delayMultiple }}
-                            className={cn("origin-center drop-shadow-sm", className)}
+                            className={cn("origin-center drop-shadow-sm px-[3px]", className)}
                         >
                             {char}
                         </motion.span>

@@ -3,6 +3,7 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 import Skills from "@/components/Skills";
 import Heading from "@/components/Heading";
 import Portfolio from "@/components/Portfolio";
+import LetsConnect from "@/components/LetsConnect";
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
       <HeroSection />
       <WhyChooseUs />
       <Skills />
-      <Heading />
+      <Heading text="Portfolio" />
       <Portfolio />
+      <LetsConnect />
     </>
   );
 }
