@@ -1,15 +1,17 @@
 import { Dock, DockIcon } from "@/components/ui/dock";
 import React from "react";
+import Heading from "./Heading";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 function LetsConnect() {
     return (
         <>
-            <div className="relative flex  w-full flex-col items-center justify-center overflow-hidden my-5 rounded-lg bg-background md:shadow-xl">
-                <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+            <div className="relative flex bg-[#151515] w-full flex-col items-center justify-center overflow-hidden my-5 rounded-lg md:shadow-xl">
+                {/* <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
                     Lets Connect
-                </span>
+                </span> */}
+                <Heading text="Lets Connect" />
                 <Dock>
                     <DockIcon>
                         <Icons.gitHub className="h-6 w-6" />
