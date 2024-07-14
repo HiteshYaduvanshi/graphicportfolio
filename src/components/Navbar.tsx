@@ -23,7 +23,7 @@ function Navbar({ className }: { className?: string }) {
                     </MenuItem>
                 </Link>
                 <Link href={"/contact"}>
-                    <MenuItem setActive={setActive} active={active} item="Contact">
+                    <MenuItem setActive={setActive} active={active} item="Contactus">
                     </MenuItem>
                 </Link>
             </Menu>
