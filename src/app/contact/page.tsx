@@ -11,7 +11,7 @@ function page() {
         <>
         
                 {/* <AnimatedGridPattern /> */}
-                <ContactHeroSection  />
+                <HeroSection />
 
                 <Heading text="Get In Touch" />
                 <ContactForm />
