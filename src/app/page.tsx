@@ -9,9 +9,8 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <Heading text="Why Choose Us" />
+      <Heading text="Expertiese" />
       <WhyChooseUs />
-      <Heading text="Skills" />
       <Skills />
       <Heading text="Portfolio" />
       <Portfolio />

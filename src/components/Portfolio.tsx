@@ -16,9 +16,9 @@ import threeDImg2 from "../../public/1.3D work/Jack Daniels.jpg"
 function Portfolio() {
     return (
         <>
-            <div className="grid grid-cols-1 mb-6 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+            <div className="grid px-3 grid-cols-1 mb-6 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
                 <WobbleCard
-                    containerClassName="col-span-1 lg:col-span-1 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+                    containerClassName="col-span-1 lg:col-span-1 h-full bg-pink-800 min-h-[290px] lg:min-h-[300px]"
                     className=""
                 >
                     <Image
@@ -85,7 +85,7 @@ function Portfolio() {
                     />
                 </WobbleCard>
                 <WobbleCard
-                    containerClassName="col-span-1 lg:col-span-1 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+                    containerClassName="col-span-1 lg:col-span-1 h-full bg-pink-800 min-h-[300px] lg:min-h-[300px]"
                     className=""
                 >
                     {/* <div className="max-w-xs">
@@ -114,13 +114,13 @@ function Portfolio() {
                         className="absolute -right-0 -bottom-0 object-contain rounded-2xl"
                     />
                 </WobbleCard>
-                <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+                <WobbleCard containerClassName="col-span-1 md:min-h-[300px]">
                     <Image
                         src={whiteBackground}
                         width={500}
                         height={500}
                         alt="linear demo image"
-                        className="absolute -right-0 -bottom-0 object-contain rounded-2xl"
+                        className="absolute -right-0 -bottom-0 object-cover rounded-2xl"
                     />
                 </WobbleCard>
             </div>

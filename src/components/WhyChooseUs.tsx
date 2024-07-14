@@ -127,7 +127,7 @@ const content = [
 
 export function WhyChooseUs() {
     return (
-        <div className="w-full">
+        <div className="w-full mt-5">
             <StickyScroll content={content} />
         </div>
     );

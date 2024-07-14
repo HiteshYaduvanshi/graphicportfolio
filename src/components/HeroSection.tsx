@@ -1,5 +1,7 @@
 import React from "react";
 import { Vortex } from "../components/ui/vortex";
+import { HeroText } from "./HeroText";
+import { HeroBtn } from "./HeroBtn";
 
 export function HeroSection() {
   return (
@@ -11,18 +13,13 @@ export function HeroSection() {
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
-        <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-          The hell is this?
-        </h2>
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-          This is chemical burn. It&apos;ll hurt more than you&apos;ve ever been
-          burned and you&apos;ll have a scar.
+        <HeroText />
+        <p className="text-[#747679] text-xs md:text-lg max-w-4xl mt-6 text-center">
+
+          I'm a trendy and innovative graphic designer and 3D artist based in India. With years of experience in the industry, I have worked with a variety of clients, delivering exceptional designs that exceed expectations. My expertise includes logo design, branding, illustration, 3D modeling, animation, social media designs, banner designs, t-shirt designs, template designs, and product designing and modeling services. My goal is to help businesses turn their ideas into a living brand, and I achieve this by collaborating closely with the clients to understand their vision and bring it to life through his unique creative skills.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-          <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-200 rounded-lg text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset]">
-            Order now
-          </button>
-          <button className="px-4 py-2  text-white ">Watch trailer</button>
+          <HeroBtn/>
         </div>
       </Vortex>
     </div>

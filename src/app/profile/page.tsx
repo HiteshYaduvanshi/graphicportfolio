@@ -9,8 +9,7 @@ import React from 'react'
 function page() {
     return (
         <>
-                 <HeroSection />
-
+            <HeroSection />
             <Heading text="Expierence" />
             <Expierence />
             <Heading text="Get In Touch" />

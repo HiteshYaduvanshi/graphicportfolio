@@ -50,7 +50,7 @@ export default function SlightFlip({
     }, []);
 
     return (
-        <div ref={ref} className="flex justify-center space-x-2">
+        <div ref={ref} className="flex justify-center space-x-0 md:space-x-2">
             <AnimatePresence mode="wait">
                 {isInView &&
                     word.split("").map((char, i) => (

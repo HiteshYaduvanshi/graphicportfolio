@@ -9,7 +9,7 @@ const Heading: FC<HeadingProps> = ({ text }) => {
     return (
         <>
             <FlipText
-                className="text-4xl font-bold tracking-[-0.1em] bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-transparent md:text-5xl my-3 md:leading-[5rem]"
+                className="text-5xl font-bold tracking-[-0.1em] bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-transparent md:text-5xl my-3 md:leading-[5rem]"
                 word={text}
             />
         </>
