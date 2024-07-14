@@ -8,6 +8,7 @@ import {
     IconBrandGoogle,
     IconBrandOnlyfans,
 } from "@tabler/icons-react";
+import { ContactImg } from "./ContactImg";
 
 export function ContactForm() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,20 +16,18 @@ export function ContactForm() {
         console.log("Form submitted");
     };
     return (
-        <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-transparent">
-
-
-            <form className="mt-8" onSubmit={handleSubmit}>
-                <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-                    <LabelInputContainer>
-                        <Label htmlFor="firstname">First name</Label>
-                        <Input id="firstname" placeholder="Tyler" type="text" />
-                    </LabelInputContainer>
-                    <LabelInputContainer>
-                        <Label htmlFor="lastname">Last name</Label>
-                        <Input id="lastname" placeholder="Durden" type="text" />
-                    </LabelInputContainer>
-                </div>
+        <div className="max-w-md w-[700px] flex justify-between items-start px-12 rounded-none md:rounded-2xl p-4 md:p-2 shadow-input bg-transparent">
+            <form className="px-16" onSubmit={handleSubmit}>
+                {/* <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4"> */}
+                <LabelInputContainer className="mb-4 w-full">
+                    <Label htmlFor="firstname">First name</Label>
+                    <Input className="border" id="firstname" placeholder="Tyler" type="text" />
+                </LabelInputContainer>
+                <LabelInputContainer className="mb-4">
+                    <Label htmlFor="lastname">Last name</Label>
+                    <Input id="lastname" placeholder="Durden" type="text" />
+                </LabelInputContainer>
+                {/* </div> */}
                 <LabelInputContainer className="mb-4">
                     <Label htmlFor="email">Email Address</Label>
                     <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
@@ -56,7 +55,7 @@ export function ContactForm() {
                 </LabelInputContainer>
 
                 <button
-                    className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                    className="bg-gradient-to-br w-[400px] mx-auto relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800  text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                     type="submit"
                 >
                     Sign up &rarr;
@@ -98,6 +97,9 @@ export function ContactForm() {
           </button>
         </div> */}
             </form>
+            <div className="flex-1 justify-end">
+                <ContactImg />
+            </div>
         </div>
     );
 }
@@ -119,7 +121,7 @@ const LabelInputContainer = ({
     className?: string;
 }) => {
     return (
-        <div className={cn("flex flex-col space-y-2 w-full", className)}>
+        <div className={cn("flex flex-col space-y-2 px-[100px] w-full", className)}>
             {children}
         </div>
     );

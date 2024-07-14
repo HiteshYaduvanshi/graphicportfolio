@@ -99,7 +99,7 @@ export function GridPattern({
       ref={containerRef}
       aria-hidden="true"
       className={cn(
-        "pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30",
+        "pointer-events-none absolute inset-0 h-full w-screen overflow-hidden fill-gray-400/30 stroke-gray-400/30",
         className,
       )}
       {...props}
@@ -120,8 +120,8 @@ export function GridPattern({
           />
         </pattern>
       </defs>
-      <rect width="100%" height="100%" fill={`url(#${id})`} />
-      <svg x={x} y={y} className="overflow-visible">
+      <rect width="90%" height="100%" fill={`url(#${id})`} />
+      <svg x={x} y={y} className="overflow-hidden">
         {squares.map(({ pos: [x, y], id }, index) => (
           <motion.rect
             initial={{ opacity: 0 }}

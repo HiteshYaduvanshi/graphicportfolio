@@ -4,8 +4,8 @@ import AnimatedGridPatternComponent from "@/components/ui/GridPattern";
 
 function AnimatedGridPattern() {
     return (
-        <div className="relative flex h-screen w-full items-center justify-center overflow-hidden rounded-lg bg-background p-2 md:shadow-xl">
-            <div className="z-10 flex flex-col gap-4 w-1/3 whitespace-pre-wrap text-center  font-medium tracking-tighter text-white dark:text-white">
+        <div className="relative flex h-screen max-w-screen w-screen overflow-hidden items-center justify-center rounded-lg bg-background p-2 md:shadow-xl">
+            <div className="z-10 flex flex-col gap-4 w-1/3 whitespace-pre-wrap text-center font-medium tracking-tighter text-white dark:text-white">
                 <p className='text-3xl text-neutral-500'>Currently seeking new opportunities</p>
                 <span className='text-sm text-neutral-500'>
                     Graphic Design and 3D Art is where creativity meets innovation. Get ready to experience top-notch graphic design that will take your brand to the next level.</span>
@@ -17,7 +17,7 @@ function AnimatedGridPattern() {
                 repeatDelay={1}
                 className={cn(
                     "[mask-image:radial-gradient(850px_circle_at_center,blue,transparent)]",
-                    "inset-x-0 inset-y-[-30%] h-[200%] skew-y-10",
+                    "inset-x-0 inset-y-[-30%] h-[200%] w-screen overflow-hidden skew-y-10",
                 )}
             />
         </div>

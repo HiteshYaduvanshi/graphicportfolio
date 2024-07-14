@@ -127,7 +127,7 @@ const content = [
 
 export function WhyChooseUs() {
     return (
-        <div className="w-full py-20">
+        <div className="w-full">
             <StickyScroll content={content} />
         </div>
     );
