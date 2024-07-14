@@ -8,7 +8,7 @@ import LetsConnect from "@/components/LetsConnect";
 export default function Home() {
   return (
     <>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <Heading text="Why Choose Us" />
       <WhyChooseUs />
       <Heading text="Skills" />
